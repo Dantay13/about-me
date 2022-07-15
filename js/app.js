@@ -11,6 +11,8 @@ function enterUserName() {
   }
 }
 
+enterUserName();
+
 let answer1 = prompt("Do I like Marvel Cinematic Universe Movies?");
 console.log(answer1);
 
