@@ -1,0 +1,30 @@
+h1 {
+    font-size: 2rem;
+}
+
+body {
+    width: 70%;
+    margin: auto;
+}
+
+main {
+    border: 1px;
+    padding: 1rem;
+}
+
+ul {
+    list-style: disc inside;
+}
+
+ol {
+    list-style: disc inside;
+}
+
+p {
+    margin-bottom: .5rem;
+    margin-top: .5rem;
+}
+
+footer {
+    text-align: center;
+}
