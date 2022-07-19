@@ -72,3 +72,35 @@ if (answer5 === "no" || answer5 === "n") {
 } else {
   alert("Its all over now");
 }
+
+let attemptsRemain = 5;
+let correctAnswer = "13";
+let answeredCorrectly = false;
+
+while(attemptsRemain && !answeredCorrectly){
+  let response = prompt(`You get  ${attemptsRemain} attempts. Between 1 to 20 what is my favorite number?!`).toLowerCase();
+  if (response === correctAnswer){
+    alert("That's Correct!");
+    answeredCorrectly = true;
+    if (response > correctAnswer){
+      response = prompt("Sorry, too high! Please try again!");
+  } else if (response < correctAnswer){
+      response = prompt("Sorry, too low! Please try again!");
+  }
+  }
+  attemptsRemain--;
+}
+
+let myFavoriteColors = 6;
+let correctColors = "Red, Black, White";
+let answeredColors = false;
+
+while(myFavoriteColors && !answeredColors){
+  let response = prompt(`You get  ${attemptsRemain} attempts. What is my favorite color?!`).toLowerCase();
+  if (response === correctColors){
+    alert("That's Correct!");
+    answeredColors = true;
+  }
+  myFavoriteColors--;
+}
+
