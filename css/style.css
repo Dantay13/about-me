@@ -1,10 +1,14 @@
 h1 {
-    font-size: 2rem;
+    color: rgb(232, 54, 54);
+    font-size: 50px;
+    text-align: center;
+    margin-left: 0%;
 }
 
 body {
     width: 70%;
     margin: auto;
+    background-color: rgb(196, 176, 176);
 }
 
 main {
@@ -23,6 +27,46 @@ ol {
 p {
     margin-bottom: .5rem;
     margin-top: .5rem;
+}
+
+#bio {
+    font-size: 20px;
+    text-align: center;
+
+} 
+
+#countries {
+    color: darkgreen;
+}
+
+#sport {
+    color: darkgreen;
+    margin-left: 5%;
+}
+
+#marvel {
+    color: darkgreen;
+    margin-left: 5%;
+}
+
+#tv {
+    color: darkgreen;
+    margin-left: 5%;
+    width: 20%;
+}
+
+#countries, #sport, #marvel, #tv {
+    float: left; margin: 3.5%;
+}
+
+#edu {
+    margin-top: 30%;
+    margin-bottom: 5%;
+    color: blue;
+}
+
+#work {
+    color: blue;
 }
 
 footer {

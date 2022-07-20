@@ -1,17 +1,15 @@
 "use strict";
 
-function enterUserName() {
-  let userName = prompt("Please Enter Your Name!");
+let userName = prompt("Please Enter Your Name!");
 
-  console.log(userName);
-  if (userName.toLowerCase() === "Adam") {
-    document.write("Welcome Instructor " + userName);
-  } else {
-    document.write("Welcome " + userName);
-  }
+console.log(userName);
+if (userName.toLowerCase() === "Adam") {
+  console.log("Welcome Instructor " + userName);
+} else {
+  console.log("Welcome " + userName);
 }
 
-enterUserName();
+userName();
 
 let answer1 = prompt("Do I like Marvel Cinematic Universe Movies?");
 console.log(answer1);
