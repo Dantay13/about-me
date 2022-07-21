@@ -1,6 +1,5 @@
 "use strict";
 
-let userName = prompt("Please Enter Your Name!");
 // name appear at the bottom
 console.log(userName);
 if (userName.toLowerCase() === "Adam") {
@@ -31,7 +30,8 @@ if (answer2 === "no" || answer2 === "n") {
   alert("No way, sorry. My favorite sport is soccer");
 } else {
   alert("Come on, all you had to do was say yes or no");
-}
+}let userName = prompt("Please Enter Your Name!");
+
 
 let answer3 = prompt("Do you think that I've traveled to Italy?");
 console.log(answer3);
@@ -69,23 +69,45 @@ if (answer5 === "no" || answer5 === "n") {
   alert("Its all over now");
 }
 
-let attemptsRemain = 5;
-let correctAnswer = "13";
-let answeredCorrectly = false;
+// let attemptsRemain = 4;
+// let correctAnswer = "13";
+// let answeredCorrectly = false;
 
-while(attemptsRemain && !answeredCorrectly){
-  let response = prompt(`You get  ${attemptsRemain} attempts. Between 1 to 20 what is my favorite number?!`).toLowerCase();
-  if (response === correctAnswer){
-    alert("That's Correct!");
-    answeredCorrectly = true;
-    if (response > correctAnswer){
-      response = prompt("Sorry, too high! Please try again!");
-    } else if (response < correctAnswer){
-      response = prompt("Sorry, too low! Please try again!");
+// while(attemptsRemain && !answeredCorrectly){
+//   let response = prompt(`You get  ${attemptsRemain} attempts. Between 1 to 20 what is my favorite number?!`).toLowerCase();
+//   if (response === correctAnswer){
+//     alert("That's Correct!");
+//     answeredCorrectly = true;
+//     if (response > correctAnswer){
+//       response = alert("Sorry, too high! Please try again!");
+//     } else if (response < correctAnswer){
+//       response = alert("Sorry, too low! Please try again!");
+//     }
+//   }
+//   attemptsRemain--;
+// }
+
+function myFavoriteNumber(){
+  let correctAnswer = "13";
+  for (let i=0; i< 4 ;i++){
+    let response = prompt("Between 1-20 what is my favorite number?");
+    if (response === correctAnswer){
+      alert("That is correct");
+      i++;
+      break;
+    }else if (i >= 3){
+      alert("Sorry better luck next time");
+      break;
+    }else if (response < correctAnswer){
+      alert("That number is too low");
+      console.log(response);
+    } else if (response > correctAnswer){
+      alert("Tha number is too high");
+      console.log(response);
     }
   }
-  attemptsRemain--;
 }
+myFavoriteNumber()
 
 let myFavoriteColors = 6;
 let correctColors = ["Red","Black","White"];
