@@ -1,15 +1,13 @@
 "use strict";
 
 let userName = prompt("Please Enter Your Name!");
-
+// name appear at the bottom
 console.log(userName);
 if (userName.toLowerCase() === "Adam") {
-  console.log("Welcome Instructor " + userName);
+  document.write("Welcome Instructor " + userName);
 } else {
-  console.log("Welcome " + userName);
+  document.write("Welcome " + userName);
 }
-
-userName();
 
 let answer1 = prompt("Do I like Marvel Cinematic Universe Movies?");
 console.log(answer1);
@@ -82,20 +80,21 @@ while(attemptsRemain && !answeredCorrectly){
     answeredCorrectly = true;
     if (response > correctAnswer){
       response = prompt("Sorry, too high! Please try again!");
-  } else if (response < correctAnswer){
+    } else if (response < correctAnswer){
       response = prompt("Sorry, too low! Please try again!");
-  }
+    }
   }
   attemptsRemain--;
 }
 
 let myFavoriteColors = 6;
-let correctColors = "Red, Black, White";
+let correctColors = ["Red","Black","White"];
 let answeredColors = false;
 
+// This code is broken
 while(myFavoriteColors && !answeredColors){
-  let response = prompt(`You get  ${attemptsRemain} attempts. What is my favorite color?!`).toLowerCase();
-  if (response === correctColors){
+  let response = prompt(`You get  ${myFavoriteColors} attempts. What is my favorite color?!`).toLowerCase();
+  if (response === correctColors[0] || correctColors[1] || correctColors[2]){
     alert("That's Correct!");
     answeredColors = true;
   }
